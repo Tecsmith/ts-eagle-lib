@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -154,58 +154,66 @@
 <wire x1="-11.5" y1="48.5" x2="70.5" y2="48.5" width="0.0762" layer="21" style="shortdash"/>
 <wire x1="70.5" y1="48.5" x2="70.5" y2="-1.5" width="0.0762" layer="21" style="shortdash"/>
 <wire x1="70.5" y1="-1.5" x2="-11.5" y2="-1.5" width="0.0762" layer="21" style="shortdash"/>
-<hole x="3.5" y="43.5" drill="5"/>
+<hole x="3.5" y="43.5" drill="4"/>
 <circle x="-6.5" y="38.5" radius="2.54" width="0.127" layer="21"/>
 <circle x="65.5" y="38.5" radius="2.54" width="0.127" layer="21"/>
 <circle x="65.5" y="8.5" radius="2.54" width="0.127" layer="21"/>
 <circle x="-6.5" y="8.5" radius="2.54" width="0.127" layer="21"/>
-<hole x="3.5" y="3.5" drill="5"/>
-<hole x="55.5" y="3.5" drill="5"/>
-<hole x="55.5" y="43.5" drill="5"/>
+<hole x="3.5" y="3.5" drill="4"/>
+<hole x="55.5" y="3.5" drill="4"/>
+<hole x="55.5" y="43.5" drill="4"/>
 <wire x1="0" y1="47" x2="0" y2="0" width="0.0762" layer="21" style="longdash"/>
 <wire x1="59" y1="47" x2="59" y2="0" width="0.0762" layer="21" style="longdash"/>
 <wire x1="0" y1="47" x2="10.5" y2="47" width="0.0762" layer="21" style="longdash"/>
 <wire x1="10.5" y1="47" x2="48.5" y2="47" width="0.0762" layer="21" style="longdash"/>
 <wire x1="48.5" y1="47" x2="59" y2="47" width="0.0762" layer="21" style="longdash"/>
 <wire x1="0" y1="0" x2="59" y2="0" width="0.0762" layer="21" style="longdash"/>
-<wire x1="50.5" y1="3.5" x2="55.5" y2="8.5" width="0.0762" layer="21" curve="-100"/>
-<wire x1="3.5" y1="38.5" x2="8.3" y2="43.5" width="0.0762" layer="21" curve="100"/>
-<wire x1="50.5" y1="43.5" x2="55.5" y2="38.5" width="0.0762" layer="21" curve="100"/>
-<wire x1="3.5" y1="8.5" x2="8.5" y2="3.5" width="0.0762" layer="21" curve="-100"/>
 <wire x1="10.5" y1="37" x2="48.5" y2="37" width="0.15" layer="21"/>
 <wire x1="10.5" y1="47" x2="48.5" y2="47" width="0.15" layer="21"/>
 <wire x1="10.5" y1="47" x2="10.5" y2="37" width="0.15" layer="21"/>
 <wire x1="48.5" y1="47" x2="48.5" y2="37" width="0.15" layer="21"/>
 <text x="60" y="45" size="1.27" layer="20">59x47mm</text>
+<circle x="3.5" y="43.5" radius="5" width="0.127" layer="39"/>
+<circle x="3.5" y="3.5" radius="5" width="0.127" layer="39"/>
+<circle x="55.5" y="3.5" radius="5" width="0.127" layer="39"/>
+<circle x="55.5" y="43.5" radius="5" width="0.127" layer="39"/>
+<circle x="3.5" y="43.5" radius="5" width="0.127" layer="40"/>
+<circle x="55.5" y="43.5" radius="5" width="0.127" layer="40"/>
+<circle x="55.5" y="3.5" radius="5" width="0.127" layer="40"/>
+<circle x="3.5" y="3.5" radius="5" width="0.127" layer="40"/>
 </package>
 <package name="115X90X40MM-JB-RAIL">
 <wire x1="-11.5" y1="-1.5" x2="-11.5" y2="88.5" width="0.0762" layer="21" style="shortdash"/>
 <wire x1="-11.5" y1="88.5" x2="103.5" y2="88.5" width="0.0762" layer="21" style="shortdash"/>
 <wire x1="103.5" y1="88.5" x2="103.5" y2="-1.5" width="0.0762" layer="21" style="shortdash"/>
 <wire x1="103.5" y1="-1.5" x2="-11.5" y2="-1.5" width="0.0762" layer="21" style="shortdash"/>
-<hole x="3.5" y="83.5" drill="5"/>
+<hole x="3.5" y="83.5" drill="4"/>
 <circle x="-6.5" y="78.5" radius="2.54" width="0.127" layer="21"/>
 <circle x="98.5" y="78.5" radius="2.54" width="0.127" layer="21"/>
 <circle x="98.5" y="8.5" radius="2.54" width="0.127" layer="21"/>
 <circle x="-6.5" y="8.5" radius="2.54" width="0.127" layer="21"/>
-<hole x="3.5" y="3.5" drill="5"/>
-<hole x="88.5" y="3.5" drill="5"/>
-<hole x="88.5" y="83.5" drill="5"/>
+<hole x="3.5" y="3.5" drill="4"/>
+<hole x="88.5" y="3.5" drill="4"/>
+<hole x="88.5" y="83.5" drill="4"/>
 <wire x1="0" y1="87" x2="0" y2="0" width="0.0762" layer="21" style="longdash"/>
 <wire x1="92" y1="87" x2="92" y2="0" width="0.0762" layer="21" style="longdash"/>
 <wire x1="0" y1="87" x2="10.5" y2="87" width="0.0762" layer="21" style="longdash"/>
 <wire x1="10.5" y1="87" x2="81.5" y2="87" width="0.0762" layer="21" style="longdash"/>
 <wire x1="81.5" y1="87" x2="92" y2="87" width="0.0762" layer="21" style="longdash"/>
 <wire x1="0" y1="0" x2="92" y2="0" width="0.0762" layer="21" style="longdash"/>
-<wire x1="83.5" y1="3.5" x2="88.5" y2="8.5" width="0.0762" layer="21" curve="-100"/>
-<wire x1="3.5" y1="78.5" x2="8.3" y2="83.5" width="0.0762" layer="21" curve="100"/>
-<wire x1="83.5" y1="83.5" x2="88.5" y2="78.5" width="0.0762" layer="21" curve="100"/>
-<wire x1="3.5" y1="8.5" x2="8.5" y2="3.5" width="0.0762" layer="21" curve="-100"/>
 <wire x1="10.5" y1="77" x2="81.5" y2="77" width="0.15" layer="21"/>
 <wire x1="10.5" y1="87" x2="81.5" y2="87" width="0.15" layer="21"/>
 <wire x1="10.5" y1="87" x2="10.5" y2="77" width="0.15" layer="21"/>
 <wire x1="81.5" y1="87" x2="81.5" y2="77" width="0.15" layer="21"/>
 <text x="93" y="85" size="1.27" layer="20">92x87mm</text>
+<circle x="3.5" y="83.5" radius="5" width="0.127" layer="39"/>
+<circle x="88.5" y="83.5" radius="5" width="0.127" layer="39"/>
+<circle x="88.5" y="3.5" radius="5" width="0.127" layer="39"/>
+<circle x="3.5" y="3.5" radius="5" width="0.127" layer="39"/>
+<circle x="3.5" y="83.5" radius="5" width="0.127" layer="40"/>
+<circle x="88.5" y="83.5" radius="5" width="0.127" layer="40"/>
+<circle x="88.5" y="3.5" radius="5" width="0.127" layer="40"/>
+<circle x="3.5" y="3.5" radius="5" width="0.127" layer="40"/>
 </package>
 <package name="145X90X40MM-JB-RAIL">
 <wire x1="-11.5" y1="-1.5" x2="-11.5" y2="88.5" width="0.0762" layer="21" style="shortdash"/>
