@@ -6,9 +6,23 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -250,96 +264,110 @@
 </package>
 <package name="ESP8266-ESP-12E">
 <description>ESP8266 Module 12E</description>
-<wire x1="8" y1="14" x2="8" y2="6.7" width="0.127" layer="21"/>
-<wire x1="-8" y1="6.7" x2="-8" y2="14" width="0.127" layer="21"/>
+<wire x1="8" y1="14" x2="8" y2="7.8" width="0.127" layer="21"/>
+<wire x1="8" y1="7.8" x2="8" y2="6.3" width="0.127" layer="21"/>
+<wire x1="-8" y1="6.3" x2="-8" y2="7.8" width="0.127" layer="21"/>
+<wire x1="-8" y1="7.8" x2="-8" y2="14" width="0.127" layer="21"/>
 <wire x1="-8" y1="14" x2="8" y2="14" width="0.127" layer="21"/>
 <text x="0" y="-1.27" size="1.4224" layer="27" align="top-center">&gt;VALUE</text>
 <text x="0" y="1.27" size="1.4224" layer="25" align="bottom-center">&gt;NAME</text>
-<smd name="RST" x="-8.2" y="5.6" dx="3" dy="1.2" layer="1"/>
-<smd name="ADC0" x="-8.2" y="3.6" dx="3" dy="1.2" layer="1"/>
-<smd name="EN" x="-8.2" y="1.6" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO16" x="-8.2" y="-0.4" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO14" x="-8.2" y="-2.4" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO12" x="-8.2" y="-4.4" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO13" x="-8.2" y="-6.4" dx="3" dy="1.2" layer="1"/>
-<smd name="VCC" x="-8.2" y="-8.4" dx="3" dy="1.2" layer="1"/>
-<smd name="TXD0" x="8.2" y="5.6" dx="3" dy="1.2" layer="1"/>
-<smd name="RXD0" x="8.2" y="3.6" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO4" x="8.2" y="-0.4" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO5" x="8.2" y="1.6" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO0" x="8.2" y="-2.4" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO2" x="8.2" y="-4.4" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO15" x="8.2" y="-6.4" dx="3" dy="1.2" layer="1"/>
-<smd name="GND" x="8.2" y="-8.4" dx="3" dy="1.2" layer="1"/>
-<smd name="MOSI" x="3.3" y="-10.5" dx="3" dy="1.2" layer="1" rot="R90"/>
-<smd name="GPIO10" x="1.3" y="-10.5" dx="3" dy="1.2" layer="1" rot="R90"/>
-<smd name="GPIO9" x="-0.7" y="-10.5" dx="3" dy="1.2" layer="1" rot="R90"/>
-<smd name="MISO" x="-2.7" y="-10.5" dx="3" dy="1.2" layer="1" rot="R90"/>
-<smd name="CS0" x="-4.7" y="-10.5" dx="3" dy="1.2" layer="1" rot="R90"/>
-<smd name="SCLK" x="5.3" y="-10.5" dx="3" dy="1.2" layer="1" rot="R90"/>
-<wire x1="-5.7" y1="-10" x2="-8" y2="-10" width="0.127" layer="21"/>
-<wire x1="8" y1="-10" x2="6.3" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5.077" y1="13.008" x2="-4.177" y2="13.008" width="0.3048" layer="21"/>
-<wire x1="-4.177" y1="13.008" x2="-4.177" y2="9.435" width="0.3048" layer="21"/>
-<wire x1="-4.177" y1="9.435" x2="-3.177" y2="9.435" width="0.3048" layer="21"/>
-<wire x1="-3.177" y1="9.435" x2="-3.177" y2="13.035" width="0.3048" layer="21"/>
-<wire x1="-3.177" y1="13.035" x2="-1.977" y2="13.035" width="0.3048" layer="21"/>
-<wire x1="-1.977" y1="13.035" x2="-1.977" y2="9.435" width="0.3048" layer="21"/>
-<wire x1="-1.977" y1="9.435" x2="-0.777" y2="9.435" width="0.3048" layer="21"/>
-<wire x1="-0.777" y1="9.435" x2="-0.777" y2="13.035" width="0.3048" layer="21"/>
-<wire x1="-0.777" y1="13.035" x2="0.323" y2="13.035" width="0.3048" layer="21"/>
-<wire x1="0.323" y1="13.035" x2="0.323" y2="9.535" width="0.3048" layer="21"/>
-<wire x1="0.323" y1="9.535" x2="1.423" y2="9.535" width="0.3048" layer="21"/>
-<wire x1="1.423" y1="9.535" x2="1.423" y2="13.035" width="0.3048" layer="21"/>
-<wire x1="1.423" y1="13.035" x2="5.423" y2="13.035" width="0.3048" layer="21"/>
-<wire x1="-5.077" y1="12.961" x2="-5.077" y2="7.535" width="0.3048" layer="21"/>
-<wire x1="-5.077" y1="7.535" x2="1.423" y2="7.535" width="0.3048" layer="21"/>
-<wire x1="-8" y1="-10" x2="-8" y2="-9.5" width="0.127" layer="21"/>
-<wire x1="8" y1="-10" x2="8" y2="-9.5" width="0.127" layer="21"/>
+<smd name="RST" x="-7.6" y="5.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="ADC0" x="-7.6" y="3.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="EN" x="-7.6" y="1.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO16" x="-7.6" y="-0.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO14" x="-7.6" y="-2.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO12" x="-7.6" y="-4.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO13" x="-7.6" y="-6.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="VCC" x="-7.6" y="-8.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="TXD0" x="7.6" y="5.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="RXD0" x="7.6" y="3.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO4" x="7.6" y="-0.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO5" x="7.6" y="1.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO0" x="7.6" y="-2.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO2" x="7.6" y="-4.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO15" x="7.6" y="-6.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GND" x="7.6" y="-8.5" dx="2.7" dy="1.2" layer="1"/>
+<smd name="MOSI" x="3" y="-10" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="GPIO10" x="1" y="-10" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="GPIO9" x="-1" y="-10" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="MISO" x="-3" y="-10" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="CS0" x="-5" y="-10" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="SCLK" x="5" y="-10" dx="2" dy="1.2" layer="1" rot="R90"/>
+<wire x1="-5.8" y1="-10" x2="-8" y2="-10" width="0.127" layer="21"/>
+<wire x1="8" y1="-10" x2="5.8" y2="-10" width="0.127" layer="21"/>
+<wire x1="-5.077" y1="13.008" x2="-4.177" y2="13.008" width="0.3048" layer="51"/>
+<wire x1="-4.177" y1="13.008" x2="-4.177" y2="9.435" width="0.3048" layer="51"/>
+<wire x1="-4.177" y1="9.435" x2="-3.177" y2="9.435" width="0.3048" layer="51"/>
+<wire x1="-3.177" y1="9.435" x2="-3.177" y2="13.035" width="0.3048" layer="51"/>
+<wire x1="-3.177" y1="13.035" x2="-1.977" y2="13.035" width="0.3048" layer="51"/>
+<wire x1="-1.977" y1="13.035" x2="-1.977" y2="9.435" width="0.3048" layer="51"/>
+<wire x1="-1.977" y1="9.435" x2="-0.777" y2="9.435" width="0.3048" layer="51"/>
+<wire x1="-0.777" y1="9.435" x2="-0.777" y2="13.035" width="0.3048" layer="51"/>
+<wire x1="-0.777" y1="13.035" x2="0.323" y2="13.035" width="0.3048" layer="51"/>
+<wire x1="0.323" y1="13.035" x2="0.323" y2="9.535" width="0.3048" layer="51"/>
+<wire x1="0.323" y1="9.535" x2="1.423" y2="9.535" width="0.3048" layer="51"/>
+<wire x1="1.423" y1="9.535" x2="1.423" y2="13.035" width="0.3048" layer="51"/>
+<wire x1="1.423" y1="13.035" x2="5.423" y2="13.035" width="0.3048" layer="51"/>
+<wire x1="-5.077" y1="12.961" x2="-5.077" y2="7.935" width="0.3048" layer="51"/>
+<wire x1="-5.077" y1="7.935" x2="1.423" y2="7.935" width="0.3048" layer="51"/>
+<wire x1="-8" y1="-10" x2="-8" y2="-9.3" width="0.127" layer="21"/>
+<wire x1="8" y1="-10" x2="8" y2="-9.3" width="0.127" layer="21"/>
+<wire x1="-8" y1="7.8" x2="8" y2="7.8" width="0.0762" layer="21" style="shortdash"/>
 </package>
-<package name="ESP8266-ESP-07">
+<package name="ESP8266-ESP-07S">
 <description>ESP8266 Module ESP-07 - 16 pins</description>
-<wire x1="-8" y1="-9.6" x2="8" y2="-9.6" width="0.127" layer="21"/>
-<wire x1="8" y1="12.4" x2="-8" y2="12.4" width="0.127" layer="21"/>
-<circle x="-6.5" y="10" radius="0.806225" width="0.127" layer="21"/>
-<circle x="-6.5" y="10" radius="0.1" width="0.127" layer="21"/>
-<smd name="TX" x="8.1" y="5.8" dx="3" dy="1.2" layer="1" roundness="17"/>
-<smd name="RX" x="8.1" y="3.8" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO4" x="8.1" y="1.8" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO5" x="8.1" y="-0.2" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO0" x="8.1" y="-2.2" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO2" x="8.1" y="-4.2" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO15" x="8.1" y="-6.2" dx="3" dy="1.2" layer="1"/>
-<smd name="RST" x="-8.3" y="5.8" dx="3" dy="1.2" layer="1"/>
-<smd name="ADC" x="-8.3" y="3.8" dx="3" dy="1.2" layer="1"/>
-<smd name="EN" x="-8.3" y="1.8" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO16" x="-8.3" y="-0.2" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO14" x="-8.3" y="-2.2" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO12" x="-8.3" y="-4.2" dx="3" dy="1.2" layer="1"/>
-<smd name="GPIO13" x="-8.3" y="-6.2" dx="3" dy="1.2" layer="1"/>
-<text x="0" y="1.27" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.27" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-<smd name="VCC" x="-8.3" y="-8.105" dx="3" dy="1.2" layer="1"/>
-<smd name="GND" x="8.1" y="-8.105" dx="3" dy="1.2" layer="1"/>
-<wire x1="-3.807" y1="11.198" x2="-2.907" y2="11.198" width="0.3048" layer="21"/>
-<wire x1="-2.907" y1="11.198" x2="-2.907" y2="9.625" width="0.3048" layer="21"/>
-<wire x1="-2.907" y1="9.625" x2="-1.907" y2="9.625" width="0.3048" layer="21"/>
-<wire x1="-1.907" y1="9.625" x2="-1.907" y2="11.225" width="0.3048" layer="21"/>
-<wire x1="-1.907" y1="11.225" x2="-0.707" y2="11.225" width="0.3048" layer="21"/>
-<wire x1="-0.707" y1="11.225" x2="-0.707" y2="9.625" width="0.3048" layer="21"/>
-<wire x1="-0.707" y1="9.625" x2="0.493" y2="9.625" width="0.3048" layer="21"/>
-<wire x1="0.493" y1="9.625" x2="0.493" y2="11.225" width="0.3048" layer="21"/>
-<wire x1="0.493" y1="11.225" x2="1.593" y2="11.225" width="0.3048" layer="21"/>
-<wire x1="1.593" y1="11.225" x2="1.593" y2="9.725" width="0.3048" layer="21"/>
-<wire x1="1.593" y1="9.725" x2="2.693" y2="9.725" width="0.3048" layer="21"/>
-<wire x1="2.693" y1="9.725" x2="2.693" y2="11.225" width="0.3048" layer="21"/>
-<wire x1="2.693" y1="11.225" x2="6.693" y2="11.225" width="0.3048" layer="21"/>
-<wire x1="-3.807" y1="11.151" x2="-3.807" y2="8.725" width="0.3048" layer="21"/>
-<wire x1="-3.807" y1="8.725" x2="2.693" y2="8.725" width="0.3048" layer="21"/>
-<wire x1="-8" y1="-9" x2="-8" y2="-9.6" width="0.127" layer="21"/>
-<wire x1="8" y1="-9.6" x2="8" y2="-9" width="0.127" layer="21"/>
-<wire x1="8" y1="6.8" x2="8" y2="12.4" width="0.127" layer="21"/>
-<wire x1="-8" y1="12.4" x2="-8" y2="6.8" width="0.127" layer="21"/>
+<wire x1="-8" y1="-8.89" x2="8" y2="-8.89" width="0.127" layer="21"/>
+<smd name="TX" x="7.6" y="6.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="RX" x="7.6" y="4.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO4" x="7.6" y="2.562" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO5" x="7.6" y="0.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO0" x="7.6" y="-1.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO2" x="7.6" y="-3.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO15" x="7.6" y="-5.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="RST" x="-7.6" y="6.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="ADC" x="-7.6" y="4.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="EN" x="-7.6" y="2.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO16" x="-7.6" y="0.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO14" x="-7.6" y="-1.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO12" x="-7.6" y="-3.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO13" x="-7.6" y="-5.39" dx="2.7" dy="1.2" layer="1"/>
+<text x="0" y="5.08" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<smd name="VCC" x="-7.6" y="-7.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GND" x="7.6" y="-7.39" dx="2.7" dy="1.2" layer="1"/>
+<wire x1="-8" y1="-8.39" x2="-8" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="8" y1="-8.89" x2="8" y2="-8.39" width="0.127" layer="21"/>
+<wire x1="8" y1="7.61" x2="8" y2="8.11" width="0.127" layer="21"/>
+<wire x1="-8" y1="8.11" x2="-8" y2="7.61" width="0.127" layer="21"/>
+<wire x1="8" y1="8.11" x2="-8" y2="8.11" width="0.127" layer="21"/>
+<circle x="-8.8" y="7.91" radius="0.4" width="0.127" layer="21"/>
+<smd name="PAD" x="0.22" y="1.927" dx="3.2" dy="3.2" layer="1"/>
+<smd name="PAD@B" x="0.22" y="1.927" dx="3.2" dy="3.2" layer="16"/>
+<pad name="P$1" x="-1.06" y="3.207" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$2" x="-0.42" y="3.207" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$3" x="0.22" y="3.207" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$4" x="0.86" y="3.207" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$5" x="1.5" y="3.207" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$6" x="-1.06" y="2.567" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$7" x="-0.42" y="2.567" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$8" x="0.22" y="2.567" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$9" x="0.86" y="2.567" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$10" x="1.5" y="2.567" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$11" x="-1.06" y="1.927" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$12" x="-0.42" y="1.927" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$13" x="0.22" y="1.927" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$14" x="0.86" y="1.927" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$15" x="1.5" y="1.927" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$16" x="-1.06" y="1.287" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$17" x="-0.42" y="1.287" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$18" x="0.22" y="1.287" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$19" x="0.86" y="1.287" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$20" x="1.5" y="1.287" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$21" x="-1.06" y="0.647" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$22" x="-0.42" y="0.647" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$23" x="0.22" y="0.647" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$24" x="0.86" y="0.647" drill="0.3" diameter="0.64" shape="square"/>
+<pad name="P$25" x="1.5" y="0.647" drill="0.3" diameter="0.64" shape="square"/>
 </package>
 <package name="ESP8266-ESP-01">
 <description>&lt;h3&gt;ESP8266 ESP-01 Module&lt;/h3&gt;</description>
@@ -644,6 +672,121 @@
 <wire x1="10.16" y1="8.89" x2="10.16" y2="-8.89" width="0.127" layer="21"/>
 <wire x1="12.7" y1="-8.89" x2="12.7" y2="8.89" width="0.127" layer="21"/>
 </package>
+<package name="ESP-WROOM-32">
+<smd name="1" x="-7.25" y="7.75" dx="1.5" dy="0.9" layer="1"/>
+<smd name="2" x="-7.25" y="6.48" dx="1.5" dy="0.9" layer="1"/>
+<smd name="3" x="-7.25" y="5.21" dx="1.5" dy="0.9" layer="1"/>
+<smd name="4" x="-7.25" y="3.94" dx="1.5" dy="0.9" layer="1"/>
+<smd name="5" x="-7.25" y="2.67" dx="1.5" dy="0.9" layer="1"/>
+<smd name="6" x="-7.25" y="1.4" dx="1.5" dy="0.9" layer="1"/>
+<smd name="7" x="-7.25" y="0.13" dx="1.5" dy="0.9" layer="1"/>
+<smd name="8" x="-7.25" y="-1.14" dx="1.5" dy="0.9" layer="1"/>
+<smd name="9" x="-7.25" y="-2.41" dx="1.5" dy="0.9" layer="1"/>
+<smd name="10" x="-7.25" y="-3.68" dx="1.5" dy="0.9" layer="1"/>
+<smd name="11" x="-7.25" y="-4.95" dx="1.5" dy="0.9" layer="1"/>
+<smd name="12" x="-7.25" y="-6.22" dx="1.5" dy="0.9" layer="1"/>
+<smd name="13" x="-7.25" y="-7.49" dx="1.5" dy="0.9" layer="1"/>
+<smd name="14" x="-7.25" y="-8.76" dx="1.5" dy="0.9" layer="1"/>
+<smd name="15" x="-4.215" y="-10.04" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="16" x="-2.945" y="-10.04" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="17" x="-1.675" y="-10.04" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="18" x="-0.405" y="-10.04" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="19" x="0.865" y="-10.04" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="20" x="2.135" y="-10.04" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="21" x="3.405" y="-10.04" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="22" x="4.675" y="-10.04" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="23" x="5.945" y="-10.04" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="24" x="7.215" y="-10.04" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="25" x="10.25" y="-8.76" dx="1.5" dy="0.9" layer="1"/>
+<smd name="26" x="10.25" y="-7.49" dx="1.5" dy="0.9" layer="1"/>
+<smd name="27" x="10.25" y="-6.22" dx="1.5" dy="0.9" layer="1"/>
+<smd name="28" x="10.25" y="-4.95" dx="1.5" dy="0.9" layer="1"/>
+<smd name="29" x="10.25" y="-3.68" dx="1.5" dy="0.9" layer="1"/>
+<smd name="30" x="10.25" y="-2.41" dx="1.5" dy="0.9" layer="1"/>
+<smd name="31" x="10.25" y="-1.14" dx="1.5" dy="0.9" layer="1"/>
+<smd name="32" x="10.25" y="0.13" dx="1.5" dy="0.9" layer="1"/>
+<smd name="33" x="10.25" y="1.4" dx="1.5" dy="0.9" layer="1"/>
+<smd name="34" x="10.25" y="2.67" dx="1.5" dy="0.9" layer="1"/>
+<smd name="35" x="10.25" y="3.94" dx="1.5" dy="0.9" layer="1"/>
+<smd name="36" x="10.25" y="5.21" dx="1.5" dy="0.9" layer="1"/>
+<smd name="37" x="10.25" y="6.48" dx="1.5" dy="0.9" layer="1"/>
+<smd name="38" x="10.25" y="7.75" dx="1.5" dy="0.9" layer="1"/>
+<text x="0" y="4.94" size="0.6096" layer="25" rot="R180" align="center">&gt;NAME</text>
+<text x="0" y="-5.22" size="0.6096" layer="27" rot="R180" align="center">&gt;VALUE</text>
+<pad name="GP02" x="0.7" y="1.4" drill="0.2" diameter="0.4" stop="no"/>
+<smd name="GND@BTM" x="0" y="0" dx="3.7" dy="3.7" layer="16" rot="R180" cream="no"/>
+<wire x1="-7.5" y1="15.21" x2="-7.5" y2="9.02" width="0.127" layer="21" style="shortdash"/>
+<wire x1="10.5" y1="9.02" x2="10.5" y2="15.21" width="0.127" layer="21" style="shortdash"/>
+<wire x1="10.5" y1="15.21" x2="-7.5" y2="15.21" width="0.127" layer="21" style="shortdash"/>
+<wire x1="10.5" y1="9.02" x2="-7.5" y2="9.02" width="0.15" layer="21"/>
+<pad name="GP01" x="-0.7" y="1.4" drill="0.2" diameter="0.4" stop="no"/>
+<pad name="GP03" x="-1.4" y="0.7" drill="0.2" diameter="0.4" stop="no"/>
+<pad name="GP04" x="0" y="0.7" drill="0.2" diameter="0.4" stop="no"/>
+<pad name="GP05" x="1.4" y="0.7" drill="0.2" diameter="0.4" stop="no"/>
+<pad name="GP07" x="0.7" y="0" drill="0.2" diameter="0.4" stop="no"/>
+<pad name="GP06" x="-0.7" y="0" drill="0.2" diameter="0.4" stop="no"/>
+<pad name="GP08" x="-1.4" y="-0.7" drill="0.2" diameter="0.4" stop="no"/>
+<pad name="GP11" x="-0.7" y="-1.4" drill="0.2" diameter="0.4" stop="no"/>
+<pad name="GP09" x="0" y="-0.7" drill="0.2" diameter="0.4" stop="no"/>
+<pad name="GP12" x="0.7" y="-1.4" drill="0.2" diameter="0.4" stop="no"/>
+<pad name="GP10" x="1.4" y="-0.7" drill="0.2" diameter="0.4" stop="no"/>
+<wire x1="10.5" y1="8.31" x2="10.5" y2="9.02" width="0.15" layer="21"/>
+<wire x1="-7.5" y1="-9.33" x2="-7.5" y2="-10.29" width="0.15" layer="21"/>
+<wire x1="7.8" y1="-10.29" x2="10.5" y2="-10.29" width="0.15" layer="21"/>
+<wire x1="-7.5" y1="-10.29" x2="-4.8" y2="-10.29" width="0.15" layer="21"/>
+<wire x1="-7.5" y1="9.02" x2="-7.5" y2="8.31" width="0.15" layer="21"/>
+<wire x1="10.5" y1="-10.29" x2="10.5" y2="-9.33" width="0.15" layer="21"/>
+<smd name="GND" x="0" y="0" dx="3.7" dy="3.7" layer="1" cream="no"/>
+<rectangle x1="-7.5" y1="9" x2="10.5" y2="15.2" layer="39"/>
+<text x="1.5" y="12.5" size="0.6096" layer="51" align="center">Keep Out Zone</text>
+</package>
+<package name="ESP8266-ESP-07">
+<description>ESP8266 Module ESP-07 - 16 pins</description>
+<wire x1="-8" y1="-8.89" x2="8" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="8" y1="12.31" x2="-8" y2="12.31" width="0.127" layer="21"/>
+<circle x="-6.5" y="10.112" radius="0.806225" width="0.127" layer="51"/>
+<circle x="-6.5" y="10.112" radius="0.1" width="0.127" layer="51"/>
+<smd name="TX" x="7.6" y="6.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="RX" x="7.6" y="4.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO4" x="7.6" y="2.562" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO5" x="7.6" y="0.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO0" x="7.6" y="-1.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO2" x="7.6" y="-3.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO15" x="7.6" y="-5.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="RST" x="-7.6" y="6.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="ADC" x="-7.6" y="4.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="EN" x="-7.6" y="2.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO16" x="-7.6" y="0.61" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO14" x="-7.6" y="-1.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO12" x="-7.6" y="-3.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GPIO13" x="-7.6" y="-5.39" dx="2.7" dy="1.2" layer="1"/>
+<text x="0" y="1.27" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<smd name="VCC" x="-7.6" y="-7.39" dx="2.7" dy="1.2" layer="1"/>
+<smd name="GND" x="7.6" y="-7.39" dx="2.7" dy="1.2" layer="1"/>
+<wire x1="-4.007" y1="11.86" x2="-3.107" y2="11.86" width="0.3048" layer="51"/>
+<wire x1="-3.107" y1="11.86" x2="-3.107" y2="10.287" width="0.3048" layer="51"/>
+<wire x1="-3.107" y1="10.287" x2="-2.107" y2="10.287" width="0.3048" layer="51"/>
+<wire x1="-2.107" y1="10.287" x2="-2.107" y2="11.887" width="0.3048" layer="51"/>
+<wire x1="-2.107" y1="11.887" x2="-0.907" y2="11.887" width="0.3048" layer="51"/>
+<wire x1="-0.907" y1="11.887" x2="-0.907" y2="10.287" width="0.3048" layer="51"/>
+<wire x1="-0.907" y1="10.287" x2="0.293" y2="10.287" width="0.3048" layer="51"/>
+<wire x1="0.293" y1="10.287" x2="0.293" y2="11.887" width="0.3048" layer="51"/>
+<wire x1="0.293" y1="11.887" x2="1.393" y2="11.887" width="0.3048" layer="51"/>
+<wire x1="1.393" y1="11.887" x2="1.393" y2="10.387" width="0.3048" layer="51"/>
+<wire x1="1.393" y1="10.387" x2="2.493" y2="10.387" width="0.3048" layer="51"/>
+<wire x1="2.493" y1="10.387" x2="2.493" y2="11.887" width="0.3048" layer="51"/>
+<wire x1="2.493" y1="11.887" x2="6.493" y2="11.887" width="0.3048" layer="51"/>
+<wire x1="-4.007" y1="11.813" x2="-4.007" y2="9.387" width="0.3048" layer="51"/>
+<wire x1="-4.007" y1="9.387" x2="2.493" y2="9.387" width="0.3048" layer="51"/>
+<wire x1="-8" y1="-8.39" x2="-8" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="8" y1="-8.89" x2="8" y2="-8.39" width="0.127" layer="21"/>
+<wire x1="8" y1="7.61" x2="8" y2="8.11" width="0.127" layer="21"/>
+<wire x1="-8" y1="8.11" x2="-8" y2="7.61" width="0.127" layer="21"/>
+<wire x1="8" y1="8.11" x2="-8" y2="8.11" width="0.127" layer="21" style="shortdash"/>
+<wire x1="8" y1="8.106" x2="8" y2="12.31" width="0.127" layer="21"/>
+<wire x1="-8" y1="12.31" x2="-8" y2="8.106" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP8266-ESP-12E">
@@ -673,9 +816,9 @@
 <pin name="11" x="-7.62" y="-22.86" visible="pin" length="middle" rot="R90"/>
 <pin name="7" x="-5.08" y="-22.86" visible="pin" length="middle" rot="R90"/>
 <pin name="9" x="-2.54" y="-22.86" visible="pin" length="middle" rot="R90"/>
-<pin name="10" x="0" y="-22.86" visible="pin" length="middle" rot="R90"/>
-<pin name="8" x="2.54" y="-22.86" visible="pin" length="middle" rot="R90"/>
-<pin name="6" x="5.08" y="-22.86" visible="pin" length="middle" rot="R90"/>
+<pin name="10" x="2.54" y="-22.86" visible="pin" length="middle" rot="R90"/>
+<pin name="8" x="5.08" y="-22.86" visible="pin" length="middle" rot="R90"/>
+<pin name="6" x="7.62" y="-22.86" visible="pin" length="middle" rot="R90"/>
 <wire x1="-3.302" y1="10.16" x2="-3.302" y2="12.7" width="0.254" layer="94"/>
 <wire x1="-3.302" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="10.16" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
@@ -703,7 +846,7 @@
 <pin name="14" x="-12.7" y="-2.54" visible="pin" length="middle"/>
 <pin name="12" x="-12.7" y="-5.08" visible="pin" length="middle"/>
 <pin name="13" x="-12.7" y="-7.62" visible="pin" length="middle"/>
-<pin name="VCC" x="-12.7" y="-10.16" visible="pin" length="middle"/>
+<pin name="VCC" x="-12.7" y="-10.16" visible="pin" length="middle" direction="pwr"/>
 <pin name="GND" x="12.7" y="-10.16" visible="pin" length="middle" rot="R180"/>
 <pin name="15" x="12.7" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="2" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
@@ -955,6 +1098,80 @@ ESP8266 WiFi module pre-programmed with an AT command interface.</description>
 <pin name="SD1" x="12.7" y="-22.86" length="middle" rot="R180"/>
 <pin name="CLK" x="12.7" y="-25.4" length="middle" rot="R180"/>
 </symbol>
+<symbol name="ESP-WROOM-32">
+<pin name="GND@1" x="-22.86" y="15.24" length="short"/>
+<pin name="3V3" x="-22.86" y="12.7" length="short"/>
+<pin name="EN" x="-22.86" y="10.16" length="short"/>
+<pin name="SENSOR_VP" x="-22.86" y="7.62" length="short"/>
+<pin name="SENSOR_VN" x="-22.86" y="5.08" length="short"/>
+<pin name="IO34" x="-22.86" y="2.54" length="short"/>
+<pin name="IO35" x="-22.86" y="0" length="short"/>
+<pin name="IO32" x="-22.86" y="-2.54" length="short"/>
+<pin name="IO33" x="-22.86" y="-5.08" length="short"/>
+<pin name="IO25" x="-22.86" y="-7.62" length="short"/>
+<pin name="IO26" x="-22.86" y="-10.16" length="short"/>
+<pin name="IO27" x="-22.86" y="-12.7" length="short"/>
+<pin name="IO14" x="-22.86" y="-15.24" length="short"/>
+<pin name="IO12" x="-22.86" y="-17.78" length="short"/>
+<pin name="GND@15" x="-10.16" y="-22.86" length="short" rot="R90"/>
+<pin name="IO13" x="-7.62" y="-22.86" length="short" rot="R90"/>
+<pin name="SD2" x="-5.08" y="-22.86" length="short" rot="R90"/>
+<pin name="SD3" x="-2.54" y="-22.86" length="short" rot="R90"/>
+<pin name="CMD" x="0" y="-22.86" length="short" rot="R90"/>
+<pin name="GND@38" x="25.4" y="15.24" length="short" rot="R180"/>
+<pin name="IO23" x="25.4" y="12.7" length="short" rot="R180"/>
+<pin name="IO22" x="25.4" y="10.16" length="short" rot="R180"/>
+<pin name="TXD0" x="25.4" y="7.62" length="short" rot="R180"/>
+<pin name="RXD0" x="25.4" y="5.08" length="short" rot="R180"/>
+<pin name="IO21" x="25.4" y="2.54" length="short" rot="R180"/>
+<pin name="NC" x="25.4" y="0" length="short" direction="nc" rot="R180"/>
+<pin name="IO19" x="25.4" y="-2.54" length="short" rot="R180"/>
+<pin name="IO18" x="25.4" y="-5.08" length="short" rot="R180"/>
+<pin name="IO5" x="25.4" y="-7.62" length="short" rot="R180"/>
+<pin name="IO17" x="25.4" y="-10.16" length="short" rot="R180"/>
+<pin name="IO16" x="25.4" y="-12.7" length="short" rot="R180"/>
+<pin name="IO4" x="25.4" y="-15.24" length="short" rot="R180"/>
+<pin name="IO0" x="25.4" y="-17.78" length="short" rot="R180"/>
+<pin name="IO2" x="12.7" y="-22.86" length="short" rot="R90"/>
+<pin name="IO15" x="10.16" y="-22.86" length="short" rot="R90"/>
+<pin name="SD1" x="7.62" y="-22.86" length="short" rot="R90"/>
+<pin name="SDO" x="5.08" y="-22.86" length="short" rot="R90"/>
+<pin name="CLK" x="2.54" y="-22.86" length="short" rot="R90"/>
+<pin name="P_GND" x="25.4" y="17.78" length="short" rot="R180"/>
+<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="20.32" x2="22.86" y2="20.32" width="0.254" layer="94"/>
+<wire x1="22.86" y1="20.32" x2="22.86" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-20.32" x2="-20.32" y2="-20.32" width="0.254" layer="94"/>
+<text x="-17.78" y="21.082" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ESP8266-ESP-07S">
+<description>ESP8266 Module ESP-07 - 16 pins</description>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="RST" x="-12.7" y="7.62" visible="pin" length="middle"/>
+<pin name="ADC" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="EN" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="16" x="-12.7" y="0" visible="pin" length="middle"/>
+<pin name="14" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="12" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<pin name="13" x="-12.7" y="-7.62" visible="pin" length="middle"/>
+<pin name="VCC" x="-12.7" y="-10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="12.7" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="15" x="12.7" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="2" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="0" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="5" x="12.7" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="4" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RX" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="TX" x="12.7" y="7.62" visible="pin" length="middle" rot="R180"/>
+<text x="-10.16" y="13.97" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="11.43" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="THRM" x="0" y="-15.24" visible="pad" length="short" direction="nc" rot="R90"/>
+<circle x="-9.144" y="9.144" radius="0.508" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ESPRESSIF-ESP-12F&amp;E" prefix="U" uservalue="yes">
@@ -994,13 +1211,13 @@ ESP8266 WiFi module pre-programmed with an AT command interface.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESPRESSIF-ESP-07">
+<deviceset name="ESPRESSIF-ESP-07S">
 <description>ESP8266 Wifi module 07 - 16 pins</description>
 <gates>
-<gate name="G$1" symbol="ESP8266-ESP-07" x="0" y="0"/>
+<gate name="G$1" symbol="ESP8266-ESP-07S" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ESP8266-ESP-07">
+<device name="" package="ESP8266-ESP-07S">
 <connects>
 <connect gate="G$1" pin="0" pad="GPIO0"/>
 <connect gate="G$1" pin="12" pad="GPIO12"/>
@@ -1016,6 +1233,7 @@ ESP8266 WiFi module pre-programmed with an AT command interface.</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="RST" pad="RST"/>
 <connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="THRM" pad="P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9 P$10 P$11 P$12 P$13 P$14 P$15 P$16 P$17 P$18 P$19 P$20 P$21 P$22 P$23 P$24 P$25 PAD PAD@B"/>
 <connect gate="G$1" pin="TX" pad="TX"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
@@ -1281,6 +1499,90 @@ ESP8266 WiFi module pre-programmed with an AT command interface.</description>
 <connect gate="G$1" pin="TDI" pad="TDI"/>
 <connect gate="G$1" pin="TMS" pad="TMG"/>
 <connect gate="G$1" pin="TX" pad="TX"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP-WROOM-32" prefix="U">
+<gates>
+<gate name="G$1" symbol="ESP-WROOM-32" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP-WROOM-32">
+<connects>
+<connect gate="G$1" pin="3V3" pad="2"/>
+<connect gate="G$1" pin="CLK" pad="20"/>
+<connect gate="G$1" pin="CMD" pad="19"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@15" pad="15"/>
+<connect gate="G$1" pin="GND@38" pad="38"/>
+<connect gate="G$1" pin="IO0" pad="25"/>
+<connect gate="G$1" pin="IO12" pad="14"/>
+<connect gate="G$1" pin="IO13" pad="16"/>
+<connect gate="G$1" pin="IO14" pad="13"/>
+<connect gate="G$1" pin="IO15" pad="23"/>
+<connect gate="G$1" pin="IO16" pad="27"/>
+<connect gate="G$1" pin="IO17" pad="28"/>
+<connect gate="G$1" pin="IO18" pad="30"/>
+<connect gate="G$1" pin="IO19" pad="31"/>
+<connect gate="G$1" pin="IO2" pad="24"/>
+<connect gate="G$1" pin="IO21" pad="33"/>
+<connect gate="G$1" pin="IO22" pad="36"/>
+<connect gate="G$1" pin="IO23" pad="37"/>
+<connect gate="G$1" pin="IO25" pad="10"/>
+<connect gate="G$1" pin="IO26" pad="11"/>
+<connect gate="G$1" pin="IO27" pad="12"/>
+<connect gate="G$1" pin="IO32" pad="8"/>
+<connect gate="G$1" pin="IO33" pad="9"/>
+<connect gate="G$1" pin="IO34" pad="6"/>
+<connect gate="G$1" pin="IO35" pad="7"/>
+<connect gate="G$1" pin="IO4" pad="26"/>
+<connect gate="G$1" pin="IO5" pad="29"/>
+<connect gate="G$1" pin="NC" pad="32"/>
+<connect gate="G$1" pin="P_GND" pad="GND@BTM GP01 GP02 GP03 GP04 GP05 GP06 GP07 GP08 GP09 GP10 GP11 GP12"/>
+<connect gate="G$1" pin="RXD0" pad="34"/>
+<connect gate="G$1" pin="SD1" pad="22"/>
+<connect gate="G$1" pin="SD2" pad="17"/>
+<connect gate="G$1" pin="SD3" pad="18"/>
+<connect gate="G$1" pin="SDO" pad="21"/>
+<connect gate="G$1" pin="SENSOR_VN" pad="5"/>
+<connect gate="G$1" pin="SENSOR_VP" pad="4"/>
+<connect gate="G$1" pin="TXD0" pad="35"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESPRESSIF-ESP-07">
+<description>ESP8266 Wifi module 07 - 16 pins</description>
+<gates>
+<gate name="G$1" symbol="ESP8266-ESP-07" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP8266-ESP-07">
+<connects>
+<connect gate="G$1" pin="0" pad="GPIO0"/>
+<connect gate="G$1" pin="12" pad="GPIO12"/>
+<connect gate="G$1" pin="13" pad="GPIO13"/>
+<connect gate="G$1" pin="14" pad="GPIO14"/>
+<connect gate="G$1" pin="15" pad="GPIO15"/>
+<connect gate="G$1" pin="16" pad="GPIO16"/>
+<connect gate="G$1" pin="2" pad="GPIO2"/>
+<connect gate="G$1" pin="4" pad="GPIO4"/>
+<connect gate="G$1" pin="5" pad="GPIO5"/>
+<connect gate="G$1" pin="ADC" pad="ADC"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
