@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="39.3700787" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="3.93700787" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -695,6 +695,62 @@
 <wire x1="-4" y1="1" x2="-3.5" y2="1" width="0.127" layer="22"/>
 <wire x1="-3" y1="2" x2="-3" y2="1.4" width="0.127" layer="22"/>
 </package>
+<package name="MX-FPRINT-1900-125U">
+<wire x1="-11.875" y1="9.5" x2="11.875" y2="9.5" width="0.15" layer="21"/>
+<wire x1="11.875" y1="9.5" x2="11.875" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="11.875" y1="-9.5" x2="-11.875" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="-11.875" y1="-9.5" x2="-11.875" y2="9.5" width="0.15" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="-1" width="0.015" layer="21"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.015" layer="21"/>
+</package>
+<package name="MX-FPRINT-1900-150U">
+<wire x1="-14.25" y1="9.5" x2="14.25" y2="9.5" width="0.15" layer="21"/>
+<wire x1="14.25" y1="9.5" x2="14.25" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="14.25" y1="-9.5" x2="-14.25" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="-14.25" y1="-9.5" x2="-14.25" y2="9.5" width="0.15" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="-1" width="0.015" layer="21"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.015" layer="21"/>
+</package>
+<package name="MX-FPRINT-1900-175U">
+<wire x1="-16.625" y1="9.5" x2="16.625" y2="9.5" width="0.15" layer="21"/>
+<wire x1="16.625" y1="9.5" x2="16.625" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="16.625" y1="-9.5" x2="-16.625" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="-16.625" y1="-9.5" x2="-16.625" y2="9.5" width="0.15" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="-1" width="0.015" layer="21"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.015" layer="21"/>
+</package>
+<package name="MX-FPRINT-1900-200U">
+<wire x1="-19" y1="9.5" x2="19" y2="9.5" width="0.15" layer="21"/>
+<wire x1="19" y1="9.5" x2="19" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="19" y1="-9.5" x2="-19" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="-19" y1="-9.5" x2="-19" y2="9.5" width="0.15" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="-1" width="0.015" layer="21"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.015" layer="21"/>
+</package>
+<package name="MX-FPRINT-1900-225U">
+<wire x1="-21.375" y1="9.5" x2="21.375" y2="9.5" width="0.15" layer="21"/>
+<wire x1="21.375" y1="9.5" x2="21.43125" y2="-9.525" width="0.15" layer="21"/>
+<wire x1="21.43125" y1="-9.525" x2="-21.43125" y2="-9.525" width="0.15" layer="21"/>
+<wire x1="-21.43125" y1="-9.525" x2="-21.375" y2="9.5" width="0.15" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="-1" width="0.015" layer="21"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.015" layer="21"/>
+</package>
+<package name="MX-FPRINT-1900-275U">
+<wire x1="-26.125" y1="9.5" x2="26.125" y2="9.5" width="0.15" layer="21"/>
+<wire x1="26.125" y1="9.5" x2="26.125" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="26.125" y1="-9.5" x2="-26.125" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="-26.125" y1="-9.5" x2="-26.125" y2="9.5" width="0.15" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="-1" width="0.015" layer="21"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.015" layer="21"/>
+</package>
+<package name="MX-FPRINT-1900-625U">
+<wire x1="-59.375" y1="9.5" x2="59.375" y2="9.5" width="0.15" layer="21"/>
+<wire x1="59.375" y1="9.5" x2="59.375" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="59.375" y1="-9.5" x2="-59.375" y2="-9.5" width="0.15" layer="21"/>
+<wire x1="-59.375" y1="-9.5" x2="-59.375" y2="9.5" width="0.15" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="-1" width="0.015" layer="21"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.015" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SPST">
@@ -709,38 +765,48 @@
 <wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
 <wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
 <text x="-4.445" y="-1.905" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<pin name="P" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="P" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 <symbol name="MX-100U">
 <text x="0" y="0" size="1.778" layer="94">1U</text>
+<text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MX-125U">
 <text x="0" y="0" size="1.778" layer="94">1.25U</text>
+<text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MX-150U">
 <text x="0" y="0" size="1.778" layer="94">1.5U</text>
+<text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MX-175U">
 <text x="0" y="0" size="1.778" layer="94">1.75U</text>
+<text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MX-200U">
 <text x="0" y="0" size="1.778" layer="94">2U</text>
+<text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MX-225U">
 <text x="0" y="0" size="1.778" layer="94">2.25U</text>
+<text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MX-275U">
 <text x="0" y="0" size="1.778" layer="94">2.75U</text>
+<text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MX-625U">
 <text x="0" y="0" size="1.778" layer="94">6.25U</text>
+<text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MX-STAB-625U">
 <text x="0" y="0" size="1.27" layer="94">6.25u Stabs</text>
+<text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MX-STAB-200U">
 <text x="0" y="0" size="1.27" layer="94">2u Stabs</text>
+<text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="USB_C">
 <wire x1="-10.2" y1="7.62" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
@@ -1097,96 +1163,136 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MX-FPRINT-1905-100U">
+<deviceset name="MX-FPRINT-100U">
 <gates>
 <gate name="G$1" symbol="MX-100U" x="-2" y="0"/>
 </gates>
 <devices>
-<device name="" package="MX-FPRINT-1905-100U">
+<device name="19.05" package="MX-FPRINT-1905-100U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="19" package="MX-FPRINT-1900-100U">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MX-FPRINT-1905-125U">
+<deviceset name="MX-FPRINT-125U">
 <gates>
 <gate name="G$1" symbol="MX-125U" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MX-FPRINT-1905-125U">
+<device name="19.05" package="MX-FPRINT-1905-125U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="19" package="MX-FPRINT-1900-125U">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MX-FPRINT-1905-150U">
+<deviceset name="MX-FPRINT-150U">
 <gates>
 <gate name="G$1" symbol="MX-150U" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MX-FPRINT-1905-150U">
+<device name="19.05" package="MX-FPRINT-1905-150U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="19" package="MX-FPRINT-1900-150U">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MX-FPRINT-1905-175U">
+<deviceset name="MX-FPRINT-175U">
 <gates>
 <gate name="G$1" symbol="MX-175U" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MX-FPRINT-1905-175U">
+<device name="19.05" package="MX-FPRINT-1905-175U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="19" package="MX-FPRINT-1900-175U">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MX-FPRINT-1905-200U">
+<deviceset name="MX-FPRINT-200U">
 <gates>
 <gate name="G$1" symbol="MX-200U" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MX-FPRINT-1905-200U">
+<device name="19.05" package="MX-FPRINT-1905-200U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="19" package="MX-FPRINT-1900-200U">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MX-FPRINT-1905-225U">
+<deviceset name="MX-FPRINT-225U">
 <gates>
 <gate name="G$1" symbol="MX-225U" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MX-FPRINT-1905-225U">
+<device name="19.05" package="MX-FPRINT-1905-225U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="19" package="MX-FPRINT-1900-225U">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MX-FPRINT-1905-275U">
+<deviceset name="MX-FPRINT-275U">
 <gates>
 <gate name="G$1" symbol="MX-275U" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MX-FPRINT-1905-275U">
+<device name="19.05" package="MX-FPRINT-1905-275U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="19" package="MX-FPRINT-1900-275U">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MX-FPRINT-1905-625U">
+<deviceset name="MX-FPRINT-625U">
 <gates>
 <gate name="G$1" symbol="MX-625U" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MX-FPRINT-1905-625U">
+<device name="19.05" package="MX-FPRINT-1905-625U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="19" package="MX-FPRINT-1900-625U">
 <technologies>
 <technology name=""/>
 </technologies>
