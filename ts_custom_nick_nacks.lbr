@@ -3099,6 +3099,16 @@ Diode with low voltage drop</description>
 <pin name="DCD" x="-5.08" y="17.78" length="short" rot="R270"/>
 <pin name="G@PAD" x="-7.62" y="17.78" length="short" rot="R270"/>
 </symbol>
+<symbol name="GROUND">
+<description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
+<wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="0" y="-4.572" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+<wire x1="-0.889" y1="-2.54" x2="-1.651" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-0.127" y1="-2.54" x2="-0.889" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-2.54" x2="-0.127" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="1.397" y1="-2.54" x2="0.635" y2="-3.81" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AMC6821-Q1">
@@ -4543,6 +4553,18 @@ This was SPECIALLY designed to be used with our Graphic LCD Backpack.  Be sure y
 <connect gate="G$1" pin="VIO" pad="5"/>
 <connect gate="G$1" pin="VPP" pad="16"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GROUND">
+<gates>
+<gate name="G$1" symbol="GROUND" x="0" y="2"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
