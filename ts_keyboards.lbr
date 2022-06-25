@@ -990,6 +990,41 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="-0.5" y1="1.15" x2="-0.5" y2="1.25" width="0.1" layer="21"/>
 <circle x="-0.5" y="1.5" radius="0.07905625" width="0.0762" layer="21"/>
 </package>
+<package name="MX-5-PIN-HOTSWAP-PAD-NS">
+<hole x="0" y="0" drill="3.9878"/>
+<hole x="-5.08" y="0" drill="1.75"/>
+<hole x="5.08" y="0" drill="1.75"/>
+<text x="0" y="7.5" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="26" rot="MR0" align="bottom-center">&gt;NAME</text>
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.015" layer="21"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.015" layer="21"/>
+<smd name="P$1" x="-7.085" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="P$2" x="5.842" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<wire x1="-6.085" y1="1.1" x2="-6.085" y2="4" width="0.15" layer="22" style="shortdash"/>
+<wire x1="-6.085" y1="4" x2="-3.085" y2="7" width="0.15" layer="22" style="shortdash" curve="-90"/>
+<wire x1="-3.085" y1="7" x2="4.815" y2="7" width="0.15" layer="22" style="shortdash"/>
+<wire x1="4.815" y1="7" x2="4.815" y2="3.5" width="0.15" layer="22" style="shortdash"/>
+<wire x1="4.815" y1="3.5" x2="4.315" y2="3" width="0.15" layer="22" style="shortdash" curve="-90"/>
+<wire x1="4.315" y1="3" x2="-0.185" y2="3" width="0.15" layer="22" style="shortdash"/>
+<wire x1="-0.185" y1="3" x2="-2.085" y2="1.1" width="0.15" layer="22" style="shortdash" curve="90"/>
+<wire x1="-2.085" y1="1.1" x2="-6.085" y2="1.1" width="0.15" layer="22" style="shortdash"/>
+<pad name="P$3" x="-3.81" y="2.54" drill="3" diameter="3.75"/>
+<pad name="P$4" x="2.54" y="5.08" drill="3" diameter="3.75"/>
+<polygon width="0.127" layer="16">
+<vertex x="-6" y="3.7"/>
+<vertex x="-5" y="3.7"/>
+<vertex x="-5.5" y="2.5"/>
+<vertex x="-5" y="1.35"/>
+<vertex x="-6" y="1.35"/>
+</polygon>
+<polygon width="0.127" layer="16">
+<vertex x="4.75" y="6.25"/>
+<vertex x="4.7" y="3.9"/>
+<vertex x="3.7" y="3.9"/>
+<vertex x="4.25" y="5.05"/>
+<vertex x="3.75" y="6.25"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="SPST">
@@ -1983,6 +2018,15 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </gates>
 <devices>
 <device name="" package="MX-5-PIN-HOTSWAP-PAD">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1 P$3"/>
+<connect gate="G$1" pin="S" pad="P$2 P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NO-SILK" package="MX-5-PIN-HOTSWAP-PAD-NS">
 <connects>
 <connect gate="G$1" pin="P" pad="P$1 P$3"/>
 <connect gate="G$1" pin="S" pad="P$2 P$4"/>
