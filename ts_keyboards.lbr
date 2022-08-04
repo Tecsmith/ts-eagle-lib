@@ -804,7 +804,7 @@
 <wire x1="-1.1" y1="-0.675" x2="-1.1" y2="0.675" width="0.15" layer="21"/>
 <wire x1="1.1" y1="0.675" x2="1.1" y2="-0.675" width="0.15" layer="21"/>
 <wire x1="-0.2" y1="0.75" x2="0.2" y2="0.75" width="0.15" layer="21"/>
-<smd name="5" x="-0.65" y="1.0875" dx="0.375" dy="0.825" layer="1"/>
+<smd name="6" x="-0.65" y="1.0875" dx="0.375" dy="0.825" layer="1"/>
 <smd name="4" x="0.65" y="1.0875" dx="0.375" dy="0.825" layer="1"/>
 <smd name="1" x="-0.65" y="-1.0875" dx="0.375" dy="0.825" layer="1"/>
 <smd name="3" x="0.65" y="-1.0875" dx="0.375" dy="0.825" layer="1"/>
@@ -1050,9 +1050,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </package>
 <package name="FOOTPRINT-AP2">
 <wire x1="0" y1="93" x2="0" y2="0" width="0.0762" layer="51" style="shortdash"/>
-<wire x1="0" y1="0" x2="285" y2="0" width="0.0762" layer="51" style="shortdash"/>
-<wire x1="285" y1="0" x2="285" y2="93" width="0.0762" layer="51" style="shortdash"/>
-<wire x1="285" y1="93" x2="0" y2="93" width="0.0762" layer="51" style="shortdash"/>
+<wire x1="0" y1="0" x2="283" y2="0" width="0.0762" layer="51" style="shortdash"/>
+<wire x1="283" y1="0" x2="283" y2="93" width="0.0762" layer="51" style="shortdash"/>
+<wire x1="283" y1="93" x2="0" y2="93" width="0.0762" layer="51" style="shortdash"/>
 <hole x="24" y="65" drill="3"/>
 <hole x="73" y="15" drill="3"/>
 <hole x="137" y="56" drill="3"/>
@@ -1063,7 +1063,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <text x="137" y="53" size="1.6764" layer="51" align="top-center">AP2</text>
 <text x="259" y="62" size="1.6764" layer="51" align="top-center">AP2</text>
 <text x="236" y="17" size="1.6764" layer="51" align="top-center">AP2</text>
-<text x="1" y="1" size="1.6764" layer="51" rot="R90" align="top-left">285 x 93</text>
+<text x="1" y="1" size="1.6764" layer="51" rot="R90" align="top-left">283 x 93</text>
 </package>
 <package name="FOOTPRINT-GH60">
 <wire x1="0" y1="94.6" x2="0" y2="0" width="0.0762" layer="51" style="shortdash"/>
@@ -2067,7 +2067,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <connects>
 <connect gate="G$1" pin="!OE" pad="1"/>
 <connect gate="G$1" pin="3_GND" pad="3"/>
-<connect gate="G$1" pin="5_VCC" pad="5"/>
+<connect gate="G$1" pin="5_VCC" pad="6"/>
 <connect gate="G$1" pin="A_DIN" pad="2"/>
 <connect gate="G$1" pin="Y_DOUT" pad="4"/>
 </connects>
@@ -2195,6 +2195,25 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </gates>
 <devices>
 <device name="" package="FOOTPRINT-GH60">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74AHCT1G125GV">
+<gates>
+<gate name="G$1" symbol="74XX_LEVELSHIFT" x="1" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-74A">
+<connects>
+<connect gate="G$1" pin="!OE" pad="1"/>
+<connect gate="G$1" pin="3_GND" pad="3"/>
+<connect gate="G$1" pin="5_VCC" pad="6"/>
+<connect gate="G$1" pin="A_DIN" pad="2"/>
+<connect gate="G$1" pin="Y_DOUT" pad="4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
