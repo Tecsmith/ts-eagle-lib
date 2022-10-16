@@ -796,7 +796,7 @@
 <text x="-1.397" y="-2.159" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.651" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="SC-74A" urn="urn:adsk.eagle:footprint:38787/1" locally_modified="yes" library_version="1">
+<package name="SC-88A__TSSOP5__SOT353-1" urn="urn:adsk.eagle:footprint:38787/1" locally_modified="yes" library_version="1">
 <wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.15" layer="51"/>
 <wire x1="-1.1" y1="0.75" x2="1.1" y2="0.75" width="0.15" layer="51"/>
 <wire x1="1.1" y1="0.75" x2="1.1" y2="-0.75" width="0.15" layer="51"/>
@@ -2063,7 +2063,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <gate name="G$1" symbol="74XX_LEVELSHIFT" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="SC-74A" package="SC-74A">
+<device name="SC-74A" package="SC-88A__TSSOP5__SOT353-1">
 <connects>
 <connect gate="G$1" pin="!OE" pad="1"/>
 <connect gate="G$1" pin="3_GND" pad="3"/>
@@ -2114,7 +2114,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </device>
 </devices>
 </deviceset>
-<deviceset name="74AHCT1G125">
+<deviceset name="74AHCT1G125GV">
 <gates>
 <gate name="G$1" symbol="74XX_LEVELSHIFT" x="0" y="0"/>
 </gates>
@@ -2201,12 +2201,12 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </device>
 </devices>
 </deviceset>
-<deviceset name="74AHCT1G125GV">
+<deviceset name="74AHCT1G125GW">
 <gates>
 <gate name="G$1" symbol="74XX_LEVELSHIFT" x="1" y="0"/>
 </gates>
 <devices>
-<device name="" package="SC-74A">
+<device name="" package="SC-88A__TSSOP5__SOT353-1">
 <connects>
 <connect gate="G$1" pin="!OE" pad="1"/>
 <connect gate="G$1" pin="3_GND" pad="3"/>
