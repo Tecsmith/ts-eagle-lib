@@ -772,15 +772,7 @@
 <wire x1="0" y1="1" x2="0" y2="-1" width="0.015" layer="21"/>
 <wire x1="-1" y1="0" x2="1" y2="0" width="0.015" layer="21"/>
 </package>
-<package name="1X04_1MM_RA" urn="urn:adsk.eagle:footprint:37714/1" library_version="1">
-<description>&lt;h3&gt;SMD- 4 Pin Right Angle &lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
+<package name="JST_SM04B-SRSS-TB_LF_SN" urn="urn:adsk.eagle:footprint:37714/1" locally_modified="yes" library_version="1">
 <wire x1="-1.5" y1="-4.6" x2="1.5" y2="-4.6" width="0.254" layer="21"/>
 <wire x1="-3" y1="-2" x2="-3" y2="-0.35" width="0.254" layer="21"/>
 <wire x1="2.25" y1="-0.35" x2="3" y2="-0.35" width="0.254" layer="21"/>
@@ -795,6 +787,11 @@
 <smd name="4" x="1.5" y="0" dx="0.6" dy="1.35" layer="1"/>
 <text x="-1.397" y="-2.159" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.651" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<polygon width="0.127" layer="21">
+<vertex x="-1.5" y="1"/>
+<vertex x="-1.8" y="1.4"/>
+<vertex x="-1.2" y="1.4"/>
+</polygon>
 </package>
 <package name="SC-88A__TSSOP5__SOT353-1" urn="urn:adsk.eagle:footprint:38787/1" locally_modified="yes" library_version="1">
 <wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.15" layer="51"/>
@@ -1096,6 +1093,43 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="0" y1="38.1" x2="3.75" y2="38.1" width="2.5" layer="46"/>
 <wire x1="18.2" y1="94.6" x2="18.2" y2="89.6" width="0.127" layer="49" style="dashdot"/>
 <circle x="29.15" y="46.4" radius="1.5" width="0.254" layer="51"/>
+</package>
+<package name="MOLEX_781710004">
+<wire x1="-2.1" y1="-4.335" x2="-1.2" y2="-4.335" width="0.254" layer="21"/>
+<wire x1="-3.3" y1="-2.835" x2="-3.3" y2="0.165" width="0.254" layer="21"/>
+<wire x1="2.7" y1="0.165" x2="3.3" y2="0.165" width="0.254" layer="21"/>
+<wire x1="3.3" y1="0.165" x2="3.3" y2="-2.835" width="0.254" layer="21"/>
+<wire x1="-3.3" y1="0.165" x2="-2.7" y2="0.165" width="0.254" layer="21"/>
+<circle x="-3.9" y="0.2" radius="0.1414" width="0.4" layer="21"/>
+<smd name="NC2" x="-2.95" y="-3.775" dx="0.7" dy="0.8" layer="1"/>
+<smd name="NC1" x="2.95" y="-3.775" dx="0.7" dy="0.8" layer="1"/>
+<smd name="1" x="-1.8" y="0" dx="0.6" dy="0.85" layer="1"/>
+<smd name="2" x="-0.6" y="0" dx="0.6" dy="0.85" layer="1"/>
+<smd name="3" x="0.6" y="0" dx="0.6" dy="0.85" layer="1"/>
+<smd name="4" x="1.8" y="0" dx="0.6" dy="0.85" layer="1"/>
+<text x="-1.397" y="-2.159" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<polygon width="0.127" layer="21">
+<vertex x="-1.8" y="0.9"/>
+<vertex x="-2.1" y="1.3"/>
+<vertex x="-1.5" y="1.3"/>
+</polygon>
+<wire x1="-0.7" y1="-3.8" x2="0.7" y2="-3.8" width="0.254" layer="21"/>
+<wire x1="1.2" y1="-4.335" x2="2.1" y2="-4.335" width="0.254" layer="21"/>
+<wire x1="-3.68" y1="-0.205" x2="3.68" y2="-0.205" width="0.127" layer="39"/>
+<wire x1="-3.68" y1="-0.205" x2="-3.68" y2="-3.775" width="0.127" layer="39"/>
+<wire x1="3.68" y1="-0.205" x2="3.68" y2="-3.775" width="0.127" layer="39"/>
+<wire x1="-3.68" y1="-3.775" x2="-2.85" y2="-3.775" width="0.127" layer="39"/>
+<wire x1="2.85" y1="-3.775" x2="3.68" y2="-3.775" width="0.127" layer="39"/>
+<wire x1="-2.85" y1="-3.775" x2="-2.85" y2="-4.715" width="0.127" layer="39"/>
+<wire x1="2.85" y1="-3.775" x2="2.85" y2="-4.715" width="0.127" layer="39"/>
+<wire x1="-0.6" y1="-4.3" x2="0.6" y2="-4.3" width="0.127" layer="39"/>
+<wire x1="0.6" y1="-4.3" x2="1" y2="-4.715" width="0.127" layer="39"/>
+<wire x1="-0.6" y1="-4.3" x2="-1" y2="-4.715" width="0.127" layer="39"/>
+<wire x1="-2.85" y1="-4.71" x2="-1" y2="-4.71" width="0.127" layer="39"/>
+<wire x1="1.01" y1="-4.72" x2="2.85" y2="-4.71" width="0.127" layer="39"/>
+<wire x1="-1.2" y1="-4.34" x2="-0.71" y2="-3.8" width="0.254" layer="21"/>
+<wire x1="0.7" y1="-3.8" x2="1.2" y2="-4.34" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2039,13 +2073,13 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </device>
 </devices>
 </deviceset>
-<deviceset name="C3_UNIFIED" prefix="J" uservalue="yes">
-<description>SMD 1mm pitch JST connector</description>
+<deviceset name="UBD-C3" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;SMD 1mm pitch JST SH 4P connector&lt;/h3&gt;</description>
 <gates>
 <gate name="J1" symbol="C3_JST_4" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X04_1MM_RA">
+<device name="" package="JST_SM04B-SRSS-TB_LF_SN">
 <connects>
 <connect gate="J1" pin="D+" pad="3"/>
 <connect gate="J1" pin="D-" pad="2"/>
@@ -2214,6 +2248,25 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <connect gate="G$1" pin="5_VCC" pad="6"/>
 <connect gate="G$1" pin="A_DIN" pad="2"/>
 <connect gate="G$1" pin="Y_DOUT" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UBD-S1_C4" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;SMD 1.2mm pitch Molex Pico-EZmate 4P connector&lt;/h3&gt;</description>
+<gates>
+<gate name="J1" symbol="C3_JST_4" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOLEX_781710004">
+<connects>
+<connect gate="J1" pin="D+" pad="3"/>
+<connect gate="J1" pin="D-" pad="2"/>
+<connect gate="J1" pin="GND" pad="4"/>
+<connect gate="J1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
