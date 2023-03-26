@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -907,10 +907,10 @@ Thermal pad: 3.45x3.45&lt;br&gt;</description>
 <vertex x="1.6923" y="-1.6923"/>
 <vertex x="1.6923" y="-0.1"/>
 </polygon>
-<smd name="EPAD" x="0.225" y="0" dx="3.45" dy="3" layer="1" rot="R270"/>
+<smd name="EPAD" x="0.225" y="0" dx="3.4" dy="3" layer="1" rot="R270"/>
 <circle x="-1.73" y="1.73" radius="0.22360625" width="0.1" layer="21"/>
-<smd name="EPAD@2" x="-1.5" y="-0.225" dx="3" dy="0.45" layer="1" rot="R270"/>
-<smd name="EPAD@1" x="-1.276" y="1.275" dx="0.636" dy="0.636" layer="1" rot="R315"/>
+<smd name="EPAD@2" x="-1.477" y="-0.2" dx="3" dy="0.4" layer="1" rot="R270"/>
+<smd name="EPAD@1" x="-1.278" y="1.299" dx="0.56568125" dy="0.56568125" layer="1" rot="R315"/>
 <wire x1="2.7" y1="2.702" x2="2.7" y2="-2.7" width="0.1" layer="39"/>
 <wire x1="2.7" y1="-2.7" x2="-2.7" y2="-2.7" width="0.1" layer="39"/>
 <wire x1="-2.7" y1="-2.7" x2="-2.7" y2="2.702" width="0.1" layer="39"/>
