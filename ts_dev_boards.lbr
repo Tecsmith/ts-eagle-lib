@@ -1423,7 +1423,7 @@ ESP8266 WiFi module pre-programmed with an AT command interface.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOLIN-D1-MINO-PRO">
+<deviceset name="LOLIN-D1-MINI-PRO">
 <gates>
 <gate name="G$1" symbol="WEMOS-D1-MINI" x="0" y="0"/>
 </gates>
