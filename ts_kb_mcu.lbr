@@ -714,38 +714,6 @@ Thermal pad: 3.45x3.45&lt;br&gt;</description>
 <vertex x="-0.5715" y="3.3655"/>
 <vertex x="-0.5715" y="3.1115"/>
 </polygon>
-<wire x1="-0.8128" y1="-1.1684" x2="-1.5748" y2="-1.1938" width="0.254" layer="18" curve="-180"/>
-<wire x1="-1.5748" y1="-1.1938" x2="-0.8128" y2="-1.1684" width="0.254" layer="18" curve="-180"/>
-<wire x1="-0.8128" y1="-0.4064" x2="-1.5748" y2="-0.4064" width="0.254" layer="18" curve="-180"/>
-<wire x1="-1.5748" y1="-0.4064" x2="-0.8128" y2="-0.381" width="0.254" layer="18" curve="-180"/>
-<wire x1="-0.8128" y1="0.4064" x2="-1.5748" y2="0.381" width="0.254" layer="18" curve="-180"/>
-<wire x1="-1.5748" y1="0.381" x2="-0.8128" y2="0.4064" width="0.254" layer="18" curve="-180"/>
-<wire x1="-0.8128" y1="1.1684" x2="-1.5748" y2="1.1684" width="0.254" layer="18" curve="-180"/>
-<wire x1="-1.5748" y1="1.1684" x2="-0.8128" y2="1.1938" width="0.254" layer="18" curve="-180"/>
-<wire x1="0" y1="-1.1684" x2="-0.762" y2="-1.1938" width="0.254" layer="18" curve="-180"/>
-<wire x1="-0.762" y1="-1.1938" x2="0" y2="-1.1684" width="0.254" layer="18" curve="-180"/>
-<wire x1="0" y1="-0.4064" x2="-0.762" y2="-0.4064" width="0.254" layer="18" curve="-180"/>
-<wire x1="-0.762" y1="-0.4064" x2="0" y2="-0.381" width="0.254" layer="18" curve="-180"/>
-<wire x1="0" y1="0.4064" x2="-0.762" y2="0.381" width="0.254" layer="18" curve="-180"/>
-<wire x1="-0.762" y1="0.381" x2="0" y2="0.4064" width="0.254" layer="18" curve="-180"/>
-<wire x1="0" y1="1.1684" x2="-0.762" y2="1.1684" width="0.254" layer="18" curve="-180"/>
-<wire x1="-0.762" y1="1.1684" x2="0" y2="1.1938" width="0.254" layer="18" curve="-180"/>
-<wire x1="0.762" y1="-1.1684" x2="0" y2="-1.1938" width="0.254" layer="18" curve="-180"/>
-<wire x1="0" y1="-1.1938" x2="0.762" y2="-1.1684" width="0.254" layer="18" curve="-180"/>
-<wire x1="0.762" y1="-0.4064" x2="0" y2="-0.4064" width="0.254" layer="18" curve="-180"/>
-<wire x1="0" y1="-0.4064" x2="0.762" y2="-0.381" width="0.254" layer="18" curve="-180"/>
-<wire x1="0.762" y1="0.4064" x2="0" y2="0.381" width="0.254" layer="18" curve="-180"/>
-<wire x1="0" y1="0.381" x2="0.762" y2="0.4064" width="0.254" layer="18" curve="-180"/>
-<wire x1="0.762" y1="1.1684" x2="0" y2="1.1684" width="0.254" layer="18" curve="-180"/>
-<wire x1="0" y1="1.1684" x2="0.762" y2="1.1938" width="0.254" layer="18" curve="-180"/>
-<wire x1="1.5748" y1="-1.1684" x2="0.8128" y2="-1.1938" width="0.254" layer="18" curve="-180"/>
-<wire x1="0.8128" y1="-1.1938" x2="1.5748" y2="-1.1684" width="0.254" layer="18" curve="-180"/>
-<wire x1="1.5748" y1="-0.4064" x2="0.8128" y2="-0.4064" width="0.254" layer="18" curve="-180"/>
-<wire x1="0.8128" y1="-0.4064" x2="1.5748" y2="-0.381" width="0.254" layer="18" curve="-180"/>
-<wire x1="1.5748" y1="0.4064" x2="0.8128" y2="0.381" width="0.254" layer="18" curve="-180"/>
-<wire x1="0.8128" y1="0.381" x2="1.5748" y2="0.4064" width="0.254" layer="18" curve="-180"/>
-<wire x1="1.5748" y1="1.1684" x2="0.8128" y2="1.1684" width="0.254" layer="18" curve="-180"/>
-<wire x1="0.8128" y1="1.1684" x2="1.5748" y2="1.1938" width="0.254" layer="18" curve="-180"/>
 <polygon width="0.0254" layer="31">
 <vertex x="-1.62686875" y="1.62686875"/>
 <vertex x="-1.62686875" y="1.2811"/>
@@ -1159,6 +1127,15 @@ Thermal pad: 3.45x3.45&lt;br&gt;</description>
 <text x="-3" y="-4.7" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-3" y="3.6" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <circle x="-3.3" y="2.3" radius="0.2" width="0.127" layer="21"/>
+<pad name="P$1" x="-1.1" y="1.1" drill="0.6" shape="square"/>
+<pad name="P$2" x="0" y="1.1" drill="0.6" shape="square"/>
+<pad name="P$3" x="1.1" y="1.1" drill="0.6" shape="square"/>
+<pad name="P$4" x="-1.1" y="0" drill="0.6" shape="square"/>
+<pad name="P$5" x="0" y="0" drill="0.6" shape="square"/>
+<pad name="P$6" x="1.1" y="0" drill="0.6" shape="square"/>
+<pad name="P$7" x="-1.1" y="-1.1" drill="0.6" shape="square"/>
+<pad name="P$8" x="0" y="-1.1" drill="0.6" shape="square"/>
+<pad name="P$9" x="1.1" y="-1.1" drill="0.6" shape="square"/>
 </package>
 </packages>
 <symbols>
@@ -1903,7 +1880,7 @@ Thermal pad: 3.45x3.45&lt;br&gt;</description>
 <connect gate="A" pin="DIR" pad="12"/>
 <connect gate="A" pin="DM" pad="8"/>
 <connect gate="A" pin="DP" pad="7"/>
-<connect gate="A" pin="EPAD" pad="33"/>
+<connect gate="A" pin="EPAD" pad="33 P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9"/>
 <connect gate="A" pin="EXTVBUS" pad="10"/>
 <connect gate="A" pin="GND_1" pad="1"/>
 <connect gate="A" pin="GND_2" pad="2"/>

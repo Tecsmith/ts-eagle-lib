@@ -250,7 +250,7 @@
 <circle x="47.625" y="-6.985" radius="1.65" width="0.15" layer="22"/>
 <circle x="-47.625" y="-6.985" radius="2.124" width="0.5" layer="22"/>
 <circle x="47.625" y="-6.985" radius="2.124" width="0.5" layer="22"/>
-<wire x1="-47.625" y1="9.525" x2="47.625" y2="9.525" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-47.625" y1="9.525" x2="47.625" y2="9.525" width="0.127" layer="21" style="shortdash"/>
 </package>
 <package name="MX-STABS-200U">
 <hole x="-11.938" y="8.255" drill="3.9878"/>
@@ -263,7 +263,7 @@
 <circle x="11.938" y="-6.985" radius="1.65" width="0.15" layer="22"/>
 <circle x="-11.938" y="-6.985" radius="2.124" width="0.5" layer="22"/>
 <circle x="11.938" y="-6.985" radius="2.124" width="0.5" layer="22"/>
-<wire x1="-11.938" y1="9.525" x2="11.938" y2="9.525" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-11.938" y1="9.525" x2="11.938" y2="9.525" width="0.127" layer="21" style="shortdash"/>
 </package>
 <package name="MX-5-PIN-HOTSWAP">
 <hole x="0" y="0" drill="3.9878"/>
@@ -705,12 +705,12 @@
 <wire x1="0" y1="1.875" x2="0" y2="-1.875" width="1.25" layer="39" curve="-180"/>
 <wire x1="0" y1="-1.875" x2="0" y2="1.875" width="1.25" layer="40" curve="-180"/>
 <wire x1="0" y1="1.875" x2="0" y2="-1.875" width="1.25" layer="40" curve="-180"/>
-<pad name="P$2" x="0" y="-1.9" drill="0.4"/>
-<pad name="P$3" x="0" y="1.9" drill="0.4"/>
-<pad name="P$7" x="1.6" y="-1" drill="0.4"/>
-<pad name="P$8" x="1.6" y="1" drill="0.4"/>
-<pad name="P$9" x="-1.6" y="1" drill="0.4"/>
-<pad name="P$10" x="-1.6" y="-1" drill="0.4"/>
+<pad name="P$4" x="0" y="-1.9" drill="0.4"/>
+<pad name="P$1" x="0" y="1.9" drill="0.4"/>
+<pad name="P$3" x="1.6" y="-1" drill="0.4"/>
+<pad name="P$2" x="1.6" y="1" drill="0.4"/>
+<pad name="P$6" x="-1.6" y="1" drill="0.4"/>
+<pad name="P$5" x="-1.6" y="-1" drill="0.4"/>
 </package>
 <package name="SK6812-E-DRILL">
 <text x="3.953" y="2.622" size="1.27" layer="26" rot="MR0">&gt;NAME</text>
@@ -2738,7 +2738,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <devices>
 <device name="" package="MOUNTING-HOLE">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$2 P$3 P$7 P$8 P$9 P$10"/>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$5 P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
