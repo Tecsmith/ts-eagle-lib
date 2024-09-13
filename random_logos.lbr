@@ -136,7 +136,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="7" fill="1" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="7" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="7" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="7" fill="1" visible="no" active="no"/>
 <layer number="160" name="O_Dim" color="7" fill="1" visible="no" active="yes"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -184,6 +189,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
+<layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
@@ -19055,6 +19062,20 @@
 <rectangle x1="11.1379" y1="2.1717" x2="11.5443" y2="2.1971" layer="21"/>
 <rectangle x1="11.1633" y1="2.1971" x2="11.5189" y2="2.2225" layer="21"/>
 </package>
+<package name="TECSMITH-LINES">
+<wire x1="0" y1="0.1905" x2="-1.524" y2="0.9525" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="0.9525" x2="0" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0" y1="1.524" x2="1.524" y2="0.9525" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="0.9525" x2="0" y2="0.1905" width="0.1524" layer="21"/>
+<wire x1="0.1905" y1="-0.1905" x2="1.7145" y2="0.5715" width="0.1524" layer="21"/>
+<wire x1="1.7145" y1="0.5715" x2="1.524" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-0.762" x2="0.1905" y2="-1.7145" width="0.1524" layer="21"/>
+<wire x1="0.1905" y1="-1.7145" x2="0.1905" y2="-0.1905" width="0.1524" layer="21"/>
+<wire x1="-0.1905" y1="-0.1905" x2="-0.1905" y2="-1.7145" width="0.1524" layer="21"/>
+<wire x1="-0.1905" y1="-1.7145" x2="-1.524" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.7145" y2="0.5715" width="0.1524" layer="21"/>
+<wire x1="-1.7145" y1="0.5715" x2="-0.1905" y2="-0.1905" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SPARKFUN_LOGO">
@@ -19066,11 +19087,29 @@
 <symbol name="QMK_LOGO">
 <text x="0" y="0" size="1.778" layer="94">Powered by QMK</text>
 </symbol>
-<symbol name="TECHSMITH-LOGO">
-<text x="0" y="0" size="1.778" layer="94">Tecsmith</text>
-</symbol>
 <symbol name="MICROMOD-LOGO">
 <text x="0" y="0" size="1.778" layer="94">MicroMod</text>
+</symbol>
+<symbol name="TECSMITH-LOGO">
+<polygon width="0.254" layer="94">
+<vertex x="0" y="0.508"/>
+<vertex x="4.064" y="2.54"/>
+<vertex x="0" y="4.064"/>
+<vertex x="-4.064" y="2.54"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="0.508" y="-0.508"/>
+<vertex x="4.572" y="1.524"/>
+<vertex x="4.064" y="-2.032"/>
+<vertex x="0.508" y="-4.572"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-0.508" y="-0.508"/>
+<vertex x="-0.508" y="-4.572"/>
+<vertex x="-4.064" y="-2.032"/>
+<vertex x="-4.572" y="1.524"/>
+</polygon>
+<text x="6.096" y="0" size="5.08" layer="94" align="center-left">tecsmith</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -19164,7 +19203,7 @@
 </deviceset>
 <deviceset name="TECSMITH-LOGO">
 <gates>
-<gate name="G$1" symbol="TECHSMITH-LOGO" x="0" y="0"/>
+<gate name="G$1" symbol="TECSMITH-LOGO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="SHORT" package="TECSMITH-CUBE">
@@ -19173,6 +19212,11 @@
 </technologies>
 </device>
 <device name="LONG" package="TECSMITH-NAME">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="TECSMITH-LINES">
 <technologies>
 <technology name=""/>
 </technologies>
