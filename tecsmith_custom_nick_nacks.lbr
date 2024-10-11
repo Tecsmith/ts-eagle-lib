@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3023,7 +3023,7 @@ Using either a low-frequency or a high-frequency PWM signal, this device can sim
 </symbol>
 <symbol name="VCC_1">
 <description>&lt;h3&gt;VCC1 Voltage Supply&lt;/h3&gt;</description>
-<pin name="VCC_1" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="VCC1" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="4.572" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.27" y1="2.54" x2="0" y2="3.81" width="0.254" layer="94"/>
 <wire x1="0" y1="3.81" x2="1.27" y2="2.54" width="0.254" layer="94"/>
@@ -3032,7 +3032,7 @@ Using either a low-frequency or a high-frequency PWM signal, this device can sim
 </symbol>
 <symbol name="VCC_2">
 <description>&lt;h3&gt;VCC2 Voltage Supply&lt;/h3&gt;</description>
-<pin name="VCC_2" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="VCC2" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="4.318" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <wire x1="1.27" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="2.54" x2="0" y2="3.81" width="0.254" layer="94"/>
@@ -3712,27 +3712,27 @@ Diode with low voltage drop</description>
 <vertex x="1.27" y="2.54"/>
 </polygon>
 </symbol>
-<symbol name="5V">
+<symbol name="VCC-5V">
 <description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;</description>
-<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="4.572" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="VCC5" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="5.08" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.27" y1="2.54" x2="0" y2="3.81" width="0.254" layer="94"/>
 <wire x1="0" y1="3.81" x2="1.27" y2="2.54" width="0.254" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<text x="-0.254" y="2.794" size="0.6096" layer="94">5</text>
+<text x="0" y="4.064" size="1.016" layer="94" align="bottom-center">5V</text>
 </symbol>
-<symbol name="3V3">
+<symbol name="VCC-3V3">
 <description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;</description>
-<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="4.572" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="VCC3" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="5.08" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.27" y1="2.54" x2="0" y2="3.81" width="0.254" layer="94"/>
 <wire x1="0" y1="3.81" x2="1.27" y2="2.54" width="0.254" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<text x="-0.254" y="2.794" size="0.6096" layer="94">3</text>
+<text x="0" y="4.064" size="1.016" layer="94" align="bottom-center">3V3</text>
 </symbol>
 <symbol name="VDD">
 <description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;</description>
-<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="VDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="4.572" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.27" y1="2.54" x2="0" y2="3.81" width="0.254" layer="94"/>
 <wire x1="0" y1="3.81" x2="1.27" y2="2.54" width="0.254" layer="94"/>
@@ -5647,7 +5647,7 @@ This was SPECIALLY designed to be used with our Graphic LCD Backpack.  Be sure y
 </deviceset>
 <deviceset name="5V">
 <gates>
-<gate name="G$1" symbol="5V" x="0" y="-2.54"/>
+<gate name="G$1" symbol="VCC-5V" x="0" y="-2.54"/>
 </gates>
 <devices>
 <device name="">
@@ -5659,7 +5659,7 @@ This was SPECIALLY designed to be used with our Graphic LCD Backpack.  Be sure y
 </deviceset>
 <deviceset name="3V3">
 <gates>
-<gate name="G$1" symbol="3V3" x="0" y="-2.54"/>
+<gate name="G$1" symbol="VCC-3V3" x="0" y="-2.54"/>
 </gates>
 <devices>
 <device name="">
