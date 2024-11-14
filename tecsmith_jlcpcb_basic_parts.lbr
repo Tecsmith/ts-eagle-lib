@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -201,7 +201,7 @@
 <wire x1="-2.195" y1="1" x2="2.195" y2="1" width="0.1" layer="39"/>
 <wire x1="2.195" y1="1" x2="2.195" y2="-1" width="0.1" layer="39"/>
 <wire x1="2.195" y1="-1" x2="-2.195" y2="-1" width="0.1" layer="39"/>
-<text x="-1.654" y="1.175" size="1" layer="25">&gt;NAME</text>
+<text x="-1.054" y="1.475" size="1" layer="25">&gt;NAME</text>
 <circle x="-2.761" y="0.003" radius="0.25" width="0" layer="21"/>
 <smd name="C" x="-1.6383" y="0" dx="0.9144" dy="1.2192" layer="1"/>
 <smd name="A" x="1.6383" y="0" dx="0.9144" dy="1.2192" layer="1"/>
@@ -209,6 +209,11 @@
 <wire x1="-0.762" y1="0" x2="0.508" y2="-0.508" width="0.2032" layer="21"/>
 <wire x1="0.508" y1="-0.508" x2="0.508" y2="0.508" width="0.2032" layer="21"/>
 <rectangle x1="-1.1468" y1="-0.9894" x2="-0.5968" y2="1.0326" layer="51"/>
+<wire x1="-1.1" y1="1.4" x2="-1.1" y2="-1.4" width="0.15" layer="21"/>
+<wire x1="-1.1" y1="1.4" x2="-0.9" y2="1.4" width="0.15" layer="21"/>
+<wire x1="-0.9" y1="1.4" x2="-0.9" y2="1.2" width="0.15" layer="21"/>
+<wire x1="-1.1" y1="-1.4" x2="-0.9" y2="-1.4" width="0.15" layer="21"/>
+<wire x1="-0.9" y1="-1.4" x2="-0.9" y2="-1.2" width="0.15" layer="21"/>
 </package>
 </packages>
 <symbols>
