@@ -705,12 +705,12 @@
 <wire x1="0" y1="1.875" x2="0" y2="-1.875" width="1.25" layer="39" curve="-180"/>
 <wire x1="0" y1="-1.875" x2="0" y2="1.875" width="1.25" layer="40" curve="-180"/>
 <wire x1="0" y1="1.875" x2="0" y2="-1.875" width="1.25" layer="40" curve="-180"/>
-<pad name="P$1@4" x="0" y="-1.9" drill="0.4"/>
-<pad name="P$1@1" x="0" y="1.9" drill="0.4"/>
-<pad name="P$1@3" x="1.6" y="-1" drill="0.4"/>
-<pad name="P$1@2" x="1.6" y="1" drill="0.4"/>
-<pad name="P$1@6" x="-1.6" y="1" drill="0.4"/>
-<pad name="P$1@5" x="-1.6" y="-1" drill="0.4"/>
+<pad name="P$1@4" x="0" y="-1.9" drill="0.4" thermals="no"/>
+<pad name="P$1@1" x="0" y="1.9" drill="0.4" thermals="no"/>
+<pad name="P$1@3" x="1.6" y="-1" drill="0.4" thermals="no"/>
+<pad name="P$1@2" x="1.6" y="1" drill="0.4" thermals="no"/>
+<pad name="P$1@6" x="-1.6" y="1" drill="0.4" thermals="no"/>
+<pad name="P$1@5" x="-1.6" y="-1" drill="0.4" thermals="no"/>
 </package>
 <package name="SK6812-E-DRILL">
 <text x="3.953" y="2.622" size="1.27" layer="26" rot="MR0">&gt;NAME</text>
@@ -2038,12 +2038,12 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <circle x="0" y="0" radius="1.7145" width="1.179" layer="41"/>
 <circle x="0" y="0" radius="1.7145" width="1.179" layer="29"/>
 <circle x="0" y="0" radius="1.7145" width="1.179" layer="30"/>
-<pad name="P$1@1" x="-0.85725" y="1.4848" drill="0.35"/>
-<pad name="P$1@2" x="0.85725" y="1.4848" drill="0.35" rot="R0.9"/>
-<pad name="P$1@3" x="1.7145" y="0" drill="0.35"/>
-<pad name="P$1@4" x="0.85725" y="-1.4848" drill="0.35"/>
-<pad name="P$1@5" x="-0.85725" y="-1.4848" drill="0.35"/>
-<pad name="P$1@6" x="-1.7145" y="0" drill="0.35"/>
+<pad name="P$1@1" x="-0.85725" y="1.4848" drill="0.35" thermals="no"/>
+<pad name="P$1@2" x="0.85725" y="1.4848" drill="0.35" rot="R0.9" thermals="no"/>
+<pad name="P$1@3" x="1.7145" y="0" drill="0.35" thermals="no"/>
+<pad name="P$1@4" x="0.85725" y="-1.4848" drill="0.35" thermals="no"/>
+<pad name="P$1@5" x="-0.85725" y="-1.4848" drill="0.35" thermals="no"/>
+<pad name="P$1@6" x="-1.7145" y="0" drill="0.35" thermals="no"/>
 </package>
 <package name="1X01" urn="urn:adsk.eagle:footprint:22382/1" locally_modified="yes">
 <pad name="1" x="0" y="0" drill="0.7366" diameter="1.1"/>
@@ -2241,6 +2241,51 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <circle x="-21.463" y="-6.985" radius="2.124" width="0.5" layer="22"/>
 <circle x="21.463" y="-6.985" radius="2.124" width="0.5" layer="22"/>
 <wire x1="-21.463" y1="9.525" x2="21.463" y2="9.525" width="0.127" layer="21" style="shortdash"/>
+</package>
+<package name="MX-DOC-100U">
+<wire x1="-9.525" y1="9.525" x2="9.525" y2="9.525" width="0.01" layer="148"/>
+<wire x1="9.525" y1="-9.525" x2="-9.525" y2="-9.525" width="0.01" layer="148"/>
+<wire x1="-9.525" y1="-9.525" x2="-9.525" y2="9.525" width="0.01" layer="148"/>
+<wire x1="-9.525" y1="9.525" x2="9.525" y2="-9.525" width="0.01" layer="148" style="shortdash"/>
+<wire x1="9.525" y1="-9.525" x2="9.525" y2="9.525" width="0.01" layer="148"/>
+<wire x1="9.525" y1="9.525" x2="-9.525" y2="-9.525" width="0.01" layer="148" style="shortdash"/>
+<text x="0" y="8" size="1" layer="148" align="bottom-center">1U</text>
+</package>
+<package name="MX-DOC-150U">
+<wire x1="-14.2875" y1="9.525" x2="14.2875" y2="9.525" width="0.01" layer="148"/>
+<wire x1="14.2875" y1="-9.525" x2="-14.2875" y2="-9.525" width="0.01" layer="148"/>
+<wire x1="-14.2875" y1="-9.525" x2="-14.2875" y2="9.525" width="0.01" layer="148"/>
+<wire x1="-14.2875" y1="9.525" x2="14.2875" y2="-9.525" width="0.01" layer="148" style="shortdash"/>
+<wire x1="14.2875" y1="-9.525" x2="14.2875" y2="9.525" width="0.01" layer="148"/>
+<wire x1="14.2875" y1="9.525" x2="-14.2875" y2="-9.525" width="0.01" layer="148" style="shortdash"/>
+<text x="0" y="8" size="1" layer="148" align="bottom-center">1.5U</text>
+</package>
+<package name="MX-DOC-175U">
+<wire x1="-16.66875" y1="9.525" x2="16.66875" y2="9.525" width="0.01" layer="148"/>
+<wire x1="16.66875" y1="-9.525" x2="-16.66875" y2="-9.525" width="0.01" layer="148"/>
+<wire x1="-16.66875" y1="-9.525" x2="-16.66875" y2="9.525" width="0.01" layer="148"/>
+<wire x1="-16.66875" y1="9.525" x2="16.66875" y2="-9.525" width="0.01" layer="148" style="shortdash"/>
+<wire x1="16.66875" y1="-9.525" x2="16.66875" y2="9.525" width="0.01" layer="148"/>
+<wire x1="16.66875" y1="9.525" x2="-16.66875" y2="-9.525" width="0.01" layer="148" style="shortdash"/>
+<text x="0" y="8" size="1" layer="148" align="bottom-center">1.75U</text>
+</package>
+<package name="MX-DOC-225U">
+<wire x1="-21.43125" y1="9.525" x2="21.43125" y2="9.525" width="0.01" layer="148"/>
+<wire x1="21.43125" y1="-9.525" x2="-21.43125" y2="-9.525" width="0.01" layer="148"/>
+<wire x1="-21.43125" y1="-9.525" x2="-21.43125" y2="9.525" width="0.01" layer="148"/>
+<wire x1="-21.43125" y1="9.525" x2="21.43125" y2="-9.525" width="0.01" layer="148" style="shortdash"/>
+<wire x1="21.43125" y1="-9.525" x2="21.43125" y2="9.525" width="0.01" layer="148"/>
+<wire x1="21.43125" y1="9.525" x2="-21.43125" y2="-9.525" width="0.01" layer="148" style="shortdash"/>
+<text x="0" y="8" size="1" layer="148" align="bottom-center">2.25U</text>
+</package>
+<package name="MX-DOC-200U">
+<wire x1="-19.05" y1="9.525" x2="19.05" y2="9.525" width="0.01" layer="148"/>
+<wire x1="19.05" y1="-9.525" x2="-19.05" y2="-9.525" width="0.01" layer="148"/>
+<wire x1="-19.05" y1="-9.525" x2="-19.05" y2="9.525" width="0.01" layer="148"/>
+<wire x1="-19.05" y1="9.525" x2="19.05" y2="-9.525" width="0.01" layer="148" style="shortdash"/>
+<wire x1="19.05" y1="-9.525" x2="19.05" y2="9.525" width="0.01" layer="148"/>
+<wire x1="19.05" y1="9.525" x2="-19.05" y2="-9.525" width="0.01" layer="148" style="shortdash"/>
+<text x="0" y="8" size="1" layer="148" align="bottom-center">2U</text>
 </package>
 </packages>
 <symbols>
@@ -3364,6 +3409,12 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <text x="0" y="0" size="1.27" layer="94">3u Stabs*</text>
 <text x="0" y="-1.27" size="0.635" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="MX-DOC-SW">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="97"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="97"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="97"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="97"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MX-5-PIN-HOTSWAP">
@@ -4397,6 +4448,38 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </gates>
 <devices>
 <device name="" package="MX-STABS-300U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MX-DOC-PLACE-HOLDER">
+<gates>
+<gate name="G$1" symbol="MX-DOC-SW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MX-DOC-100U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1.5" package="MX-DOC-150U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1.75" package="MX-DOC-175U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2" package="MX-DOC-200U">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2.25" package="MX-DOC-225U">
 <technologies>
 <technology name=""/>
 </technologies>
